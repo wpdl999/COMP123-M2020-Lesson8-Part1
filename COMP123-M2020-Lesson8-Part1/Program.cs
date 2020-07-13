@@ -8,6 +8,9 @@ namespace COMP123_M2020_Lesson8_Part1
 {
     static class Program
     {
+        // Step 1 - Declare a form
+        public static HelloWorldForm helloWorldForm;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +19,13 @@ namespace COMP123_M2020_Lesson8_Part1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HelloWorldForm());
+
+            // Step 2 - Instantiate a from
+            helloWorldForm = new HelloWorldForm();
+
+
+            // Step 3 - pass a reference to the Application
+            Application.Run(helloWorldForm);
         }
     }
 }
