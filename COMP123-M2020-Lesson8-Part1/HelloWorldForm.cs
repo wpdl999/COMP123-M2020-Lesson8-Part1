@@ -29,11 +29,11 @@ namespace COMP123_M2020_Lesson8_Part1
         }
         private void NameTextBox_TextChanged(object sender, EventArgs e)
         {
-            Debug.WriteLine(message: "NameTextBox.Text.Length is: " + NameTextBox.Text.Length);
+            /*Debug.WriteLine(message: "NameTextBox.Text.Length is: " + NameTextBox.Text.Length);
             var result = MessageBox.Show(text:"NameTextBox Lenth is: " + NameTextBox.Text.Length, caption:"NameTextBox Value", 
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            Debug.WriteLine(result == DialogResult.OK ? "True" : "False");
+            Debug.WriteLine(result == DialogResult.OK ? "True" : "False");*/
 
             ClickmeButton.Enabled = NameTextBox.Text.Length > 1;
         }
