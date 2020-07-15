@@ -34,8 +34,11 @@
             this.NameLableName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.UseInfoGroupBox = new System.Windows.Forms.GroupBox();
+            this.GreetingGroupBox = new System.Windows.Forms.GroupBox();
+            this.GreetingCheckBox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.UseInfoGroupBox.SuspendLayout();
+            this.GreetingGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // WelcomeLabel
@@ -43,9 +46,9 @@
             this.WelcomeLabel.BackColor = System.Drawing.SystemColors.Control;
             this.WelcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.WelcomeLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.WelcomeLabel.Location = new System.Drawing.Point(240, 185);
+            this.WelcomeLabel.Location = new System.Drawing.Point(62, 17);
             this.WelcomeLabel.Name = "WelcomeLabel";
-            this.WelcomeLabel.Size = new System.Drawing.Size(229, 47);
+            this.WelcomeLabel.Size = new System.Drawing.Size(176, 37);
             this.WelcomeLabel.TabIndex = 0;
             this.WelcomeLabel.Text = "Hello, World!";
             this.WelcomeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -55,7 +58,7 @@
             this.ClickmeButton.AutoSize = true;
             this.ClickmeButton.BackColor = System.Drawing.SystemColors.Highlight;
             this.ClickmeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ClickmeButton.Location = new System.Drawing.Point(283, 248);
+            this.ClickmeButton.Location = new System.Drawing.Point(82, 69);
             this.ClickmeButton.Name = "ClickmeButton";
             this.ClickmeButton.Size = new System.Drawing.Size(138, 41);
             this.ClickmeButton.TabIndex = 1;
@@ -106,15 +109,39 @@
             this.UseInfoGroupBox.TabIndex = 4;
             this.UseInfoGroupBox.TabStop = false;
             // 
+            // GreetingGroupBox
+            // 
+            this.GreetingGroupBox.Controls.Add(this.WelcomeLabel);
+            this.GreetingGroupBox.Controls.Add(this.ClickmeButton);
+            this.GreetingGroupBox.Location = new System.Drawing.Point(214, 202);
+            this.GreetingGroupBox.Name = "GreetingGroupBox";
+            this.GreetingGroupBox.Size = new System.Drawing.Size(295, 122);
+            this.GreetingGroupBox.TabIndex = 5;
+            this.GreetingGroupBox.TabStop = false;
+            // 
+            // GreetingCheckBox
+            // 
+            this.GreetingCheckBox.AutoSize = true;
+            this.GreetingCheckBox.Checked = true;
+            this.GreetingCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.GreetingCheckBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.GreetingCheckBox.Location = new System.Drawing.Point(213, 180);
+            this.GreetingCheckBox.Name = "GreetingCheckBox";
+            this.GreetingCheckBox.Size = new System.Drawing.Size(107, 16);
+            this.GreetingCheckBox.TabIndex = 6;
+            this.GreetingCheckBox.Text = "Show Greeting";
+            this.GreetingCheckBox.UseVisualStyleBackColor = true;
+            this.GreetingCheckBox.CheckedChanged += new System.EventHandler(this.GreetingCheckBox_CheckedChanged);
+            // 
             // HelloWorldForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(541, 361);
+            this.Controls.Add(this.GreetingCheckBox);
+            this.Controls.Add(this.GreetingGroupBox);
             this.Controls.Add(this.UseInfoGroupBox);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.ClickmeButton);
-            this.Controls.Add(this.WelcomeLabel);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Name = "HelloWorldForm";
             this.Text = "Hello World!";
@@ -122,6 +149,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.UseInfoGroupBox.ResumeLayout(false);
             this.UseInfoGroupBox.PerformLayout();
+            this.GreetingGroupBox.ResumeLayout(false);
+            this.GreetingGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,6 +165,8 @@
         private System.Windows.Forms.Label NameLableName;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox UseInfoGroupBox;
+        private System.Windows.Forms.GroupBox GreetingGroupBox;
+        private System.Windows.Forms.CheckBox GreetingCheckBox;
     }
 }
 

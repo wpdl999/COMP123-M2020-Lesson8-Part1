@@ -46,6 +46,12 @@ namespace COMP123_M2020_Lesson8_Part1
         private void HelloWorldForm_Load(object sender, EventArgs e)
         {
             ClickmeButton.Enabled = false;
+            WelcomeLabel.Font = new Font(familyName:"Consolas", emSize:24.0f);
+        }
+
+        private void GreetingCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            GreetingGroupBox.Visible = GreetingCheckBox.Checked;
         }
     }
 }
