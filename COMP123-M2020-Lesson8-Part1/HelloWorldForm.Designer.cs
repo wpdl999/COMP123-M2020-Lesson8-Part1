@@ -1,6 +1,6 @@
 ﻿namespace COMP123_M2020_Lesson8_Part1
 {
-    partial class HelloWorldForm
+    public partial class HelloWorldForm
     {
         /// <summary>
         /// Required designer variable.
@@ -67,6 +67,7 @@
             this.NameTextBox.Name = "NameTextBox";
             this.NameTextBox.Size = new System.Drawing.Size(194, 38);
             this.NameTextBox.TabIndex = 2;
+            this.NameTextBox.TextChanged += new System.EventHandler(this.NameTextBox_TextChanged);
             // 
             // NameLableName
             // 
@@ -92,6 +93,7 @@
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Name = "HelloWorldForm";
             this.Text = "Hello World!";
+            this.Load += new System.EventHandler(this.HelloWorldForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
