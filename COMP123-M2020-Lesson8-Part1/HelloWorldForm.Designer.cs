@@ -30,6 +30,8 @@
         {
             this.WelcomeLabel = new System.Windows.Forms.Label();
             this.ClickmeButton = new System.Windows.Forms.Button();
+            this.NameTextBox = new System.Windows.Forms.TextBox();
+            this.NameLableName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // WelcomeLabel
@@ -37,9 +39,9 @@
             this.WelcomeLabel.BackColor = System.Drawing.SystemColors.Control;
             this.WelcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.WelcomeLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.WelcomeLabel.Location = new System.Drawing.Point(229, 207);
+            this.WelcomeLabel.Location = new System.Drawing.Point(7, 207);
             this.WelcomeLabel.Name = "WelcomeLabel";
-            this.WelcomeLabel.Size = new System.Drawing.Size(178, 47);
+            this.WelcomeLabel.Size = new System.Drawing.Size(618, 47);
             this.WelcomeLabel.TabIndex = 0;
             this.WelcomeLabel.Text = "Hello, World!";
             this.WelcomeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -57,12 +59,35 @@
             this.ClickmeButton.UseVisualStyleBackColor = false;
             this.ClickmeButton.Click += new System.EventHandler(this.ClickmeButton_Click);
             // 
+            // NameTextBox
+            // 
+            this.NameTextBox.AccessibleRole = System.Windows.Forms.AccessibleRole.IpAddress;
+            this.NameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameTextBox.Location = new System.Drawing.Point(206, 100);
+            this.NameTextBox.Name = "NameTextBox";
+            this.NameTextBox.Size = new System.Drawing.Size(194, 38);
+            this.NameTextBox.TabIndex = 2;
+            // 
+            // NameLableName
+            // 
+            this.NameLableName.BackColor = System.Drawing.SystemColors.Control;
+            this.NameLableName.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.NameLableName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.NameLableName.Location = new System.Drawing.Point(182, 35);
+            this.NameLableName.Name = "NameLableName";
+            this.NameLableName.Size = new System.Drawing.Size(256, 47);
+            this.NameLableName.TabIndex = 0;
+            this.NameLableName.Text = "Enter Your Name";
+            this.NameLableName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // HelloWorldForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(629, 441);
+            this.Controls.Add(this.NameTextBox);
             this.Controls.Add(this.ClickmeButton);
+            this.Controls.Add(this.NameLableName);
             this.Controls.Add(this.WelcomeLabel);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Name = "HelloWorldForm";
@@ -74,8 +99,11 @@
 
         #endregion
 
+        //private system.Windows.forms
         private System.Windows.Forms.Label WelcomeLabel;
         private System.Windows.Forms.Button ClickmeButton;
+        private System.Windows.Forms.TextBox NameTextBox;
+        private System.Windows.Forms.Label NameLableName;
     }
 }
 
